@@ -1,0 +1,31 @@
+Package: flowTraceR
+Title: Standardization of level information and tracking inter-software differences in bottom-up label-free proteomics
+Version: 0.0.0.9000
+Authors@R: 
+    person("Oliver", "Kardell", , "Okdll@gmx.net", role = c("aut", "cre"))
+Description: Useful functions to standardize software outputs from ProteomeDiscoverer, Spectronaut, DIA-NN and MaxQuant on precursor, modified peptide and proteingroup level and to trace software differences for identifications such as varying proteingroup denotations for common precursor.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Imports: 
+    comprehenr,
+    data.table,
+    dplyr,
+    ggplot2,
+    magrittr,
+	stringr,
+    tibble,
+    tidyr
+Suggests: 
+    kableExtra,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/OKdll/flowTraceR
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
