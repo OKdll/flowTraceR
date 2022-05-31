@@ -20,9 +20,7 @@ This vignette is a workflow template including import, conversion to a standard 
 ## Loading R packages
 
 ```{r setup, message = FALSE, warning = FALSE}
-library(devtools)
-load_all()
-#library(flowTraceR)
+library(flowTraceR)
 library(magrittr)
 library(dplyr)
 library(tidyr)

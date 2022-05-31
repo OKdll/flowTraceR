@@ -23,9 +23,7 @@ This vignette serves as application example for analyzing inter-software differe
 ## Loading R packages
 
 ```{r setup, message = FALSE, warning = FALSE}
-library(devtools)
-load_all()
-#library(flowTraceR)
+library(flowTraceR)
 library(magrittr) 
 library(dplyr)
 library(tidyr)
