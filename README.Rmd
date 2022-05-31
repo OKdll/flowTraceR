@@ -17,8 +17,6 @@ knitr::opts_chunk$set(
 # flowTraceR <img src='man/figures/flowTraceR.png' align="right" width="10%" />
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/OKdll/flowTraceR.svg?branch=main)](https://travis-ci.com/OKdll/flowTraceR)
-[![R-CMD-check](https://github.com/OKdll/flowTraceR/workflows/R-CMD-check/badge.svg)](https://github.com/OKdll/flowTraceR/actions)
 <!-- badges: end -->
 
 flowTraceR is an R package for enabling researchers to perform inter-software comparisons for common proteomic software tools. It can be used to analyze label-free mass spectrometry-based experiments with data-depended or data-independent spectral acquisition.
@@ -35,7 +33,7 @@ devtools::install_github("OKdll/flowTraceR", dependencies = TRUE) # use dependen
 ## Preparation
 
 ### Requirements 
-As input the standard outputs of ProteomeDiscoverer, Spectronaut, DIA-NN or MaxQuant are supported by flowTraceR. Details about further requirements are listed in the vignette **Requirements**.
+As input the standard outputs of ProteomeDiscoverer, Spectronaut, DIA-NN or MaxQuant are supported by flowTraceR. Details about further requirements are listed in the vignette [Requirements](https://okdll.github.io/flowTraceR/articles/Requirements.html).
 
 ### Import 
 Importing the output files from each software can be easily performed with `data.table::fread()`. 
@@ -65,7 +63,7 @@ library(kableExtra)
 
 ## Example - trace proteinGroups
 
-This is a basic example which demonstrates how to trace inter-software differences in proteinGroup denotations for common precursor identifications. Please check the vignette **Workflow** for a detailed analysis pipeline and more functionalities.
+This is a basic example which demonstrates how to trace inter-software differences in proteinGroup denotations for common precursor identifications. Please check the vignette [Workflow](https://okdll.github.io/flowTraceR/articles/Workflow.html) for a detailed analysis pipeline and more functionalities.
 
 ```{r example trace}
 #DIA-NN
@@ -96,7 +94,7 @@ kableExtra::kable(Difference_proteinGroup[[1]], format = "pipe", caption = "Diff
 
 ## Example - Inter-software comparison of retention times
 
-This is a basic example which shows the power of flowTraceR´s conversion to a standardized level (precursor, modified peptides, proteinGroup) output by highlighting an inter-software comparison of retention times. Please check the vignette **Example_RT_distribution** for a detailed view of the analysis **with flowTraceR** and **without flowTraceR**.
+This is a basic example which shows the power of flowTraceR´s conversion to a standardized level (precursor, modified peptides, proteinGroup) output by highlighting an inter-software comparison of retention times. Please check the vignette [Example_RT_distribution](https://okdll.github.io/flowTraceR/articles/Example_RT_distribution.html) for a detailed view of the analysis **with flowTraceR** and **without flowTraceR**.
 
 ```{r example RT}
 #DIA-NN
