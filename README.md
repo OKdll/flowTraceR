@@ -29,7 +29,8 @@ devtools::install_github("OKdll/flowTraceR", dependencies = TRUE) # use dependen
 
 As input the standard outputs of ProteomeDiscoverer, Spectronaut, DIA-NN
 or MaxQuant are supported by flowTraceR. Details about further
-requirements are listed in the vignette **Requirements**.
+requirements are listed in the vignette
+[Requirements](https://okdll.github.io/flowTraceR/articles/Requirements.html).
 
 ### Import
 
@@ -64,8 +65,9 @@ library(kableExtra)
 
 This is a basic example which demonstrates how to trace inter-software
 differences in proteinGroup denotations for common precursor
-identifications. Please check the vignette **Workflow** for a detailed
-analysis pipeline and more functionalities.
+identifications. Please check the vignette
+[Workflow](https://okdll.github.io/flowTraceR/articles/Workflow.html)
+for a detailed analysis pipeline and more functionalities.
 
 ``` r
 #DIA-NN
@@ -109,8 +111,10 @@ Difference in proteinGroup denotation
 This is a basic example which shows the power of flowTraceR´s conversion
 to a standardized level (precursor, modified peptides, proteinGroup)
 output by highlighting an inter-software comparison of retention times.
-Please check the vignette **Example\_RT\_distribution** for a detailed
-view of the analysis **with flowTraceR** and **without flowTraceR**.
+Please check the vignette
+[Example\_RT\_distribution](https://okdll.github.io/flowTraceR/articles/Example_RT_distribution.html)
+for a detailed view of the analysis **with flowTraceR** and **without
+flowTraceR**.
 
 ``` r
 #DIA-NN
