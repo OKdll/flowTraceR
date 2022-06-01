@@ -59,7 +59,7 @@ spectronaut_all_converted <- flowTraceR::convert_all_levels(input_df = spectrona
 ## Without flowTraceR
 
 Without conversion to a standardized format no distinction between common and unique precursor identifications can be made and thus no inter-software comparisons for characteristics such as retention time is possible. 
-```{r RT-without-flowTraceR, eval=FALSE}
+```{r RT-without-flowTraceR}
 #Example - DIA-NN output
 
 #Get common entries based on software-specific entries
@@ -90,7 +90,7 @@ ggplot2::ggplot(diann_all, aes(x = RT, color = characteristic)) +
 
 ## With flowTraceR
 
-```{r RT-with-flowTraceR, eval=FALSE}
+```{r RT-with-flowTraceR}
 #Example - DIA-NN output
 
 #Get common entries based on flowTraceR´s entries
@@ -123,7 +123,7 @@ ggplot2::ggplot(diann_traceR, aes(x = RT, color = characteristic)) +
 
 The inter-software comparison with flowTraceR shows high similarity between the RT of common precursor. 
 
-```{r inter-software-common, eval=FALSE}
+```{r inter-software-common}
 #Spectronaut - common entries
 spectronaut_common_traceR <- dplyr::semi_join(
   spectronaut_all_converted,
@@ -145,7 +145,7 @@ ggplot2::ggplot(RT_common, aes(x = RT, color = Software)) +
 
 ## Unique entries
 
-```{r inter-software-unique, eval=FALSE}
+```{r inter-software-unique}
 #Spectronaut unique entries
 spectronaut_unique_traceR <- dplyr::anti_join(
   spectronaut_all_converted,
