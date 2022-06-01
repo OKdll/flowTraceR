@@ -117,17 +117,17 @@ trace_unique_common_pg <- function(input_df1,
     input_df2_prepared,
     suffix = c(paste0("_", analysis_name1), paste0("_", analysis_name2)),
     by = "traceR_precursor") %>%
-    dplyr::select(-traceR_connected_pg_prec)
+    dplyr::select(-.data$traceR_connected_pg_prec)
 
   input_df2_joined <- dplyr::left_join(
     reduced_df2,
     input_df1_prepared,
     suffix = c(paste0("_", analysis_name2), paste0("_", analysis_name1)),
     by = "traceR_precursor") %>%
-    dplyr::select(-traceR_connected_pg_prec)
+    dplyr::select(-.data$traceR_connected_pg_prec)
 
   output_df <- rbind(input_df1_joined, input_df2_joined) %>%
-    dplyr::distinct(traceR_precursor, .keep_all = TRUE)
+    dplyr::distinct(.data$traceR_precursor, .keep_all = TRUE)
 
   #start string analysis
   if (string_analysis == TRUE) {
