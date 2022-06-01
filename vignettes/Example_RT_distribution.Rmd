@@ -59,7 +59,7 @@ spectronaut_all_converted <- flowTraceR::convert_all_levels(input_df = spectrona
 ## Without flowTraceR
 
 Without conversion to a standardized format no distinction between common and unique precursor identifications can be made and thus no inter-software comparisons for characteristics such as retention time is possible. 
-```{r RT without flowTraceR}
+```{r RT without flowTraceR, eval=FALSE}
 #Example - DIA-NN output
 
 #Get common entries based on software-specific entries
@@ -87,10 +87,11 @@ ggplot2::ggplot(diann_all, aes(x = RT, color = characteristic)) +
   scale_x_continuous(limits = c(0,115))
 
 ```
+<img src="figures/EXAMPLE-RT-distribution-pic1.png" width="80%" />
 
 ## With flowTraceR
 
-```{r RT with flowTraceR}
+```{r RT with flowTraceR, eval=FALSE}
 #Example - DIA-NN output
 
 #Get common entries based on flowTraceR´s entries
@@ -116,6 +117,7 @@ ggplot2::ggplot(diann_traceR, aes(x = RT, color = characteristic)) +
   geom_density() + 
   scale_x_continuous(limits = c(0,115))
 ```
+<img src="figures/EXAMPLE-RT-distribution-pic2.png" width="80%" />
 
 # Inter-software comparison
 
@@ -123,7 +125,7 @@ ggplot2::ggplot(diann_traceR, aes(x = RT, color = characteristic)) +
 
 The inter-software comparison with flowTraceR shows high similarity between the RT of common precursor. 
 
-```{r inter-software common}
+```{r inter-software common, eval=FALSE}
 #Spectronaut - common entries
 spectronaut_common_traceR <- dplyr::semi_join(
   spectronaut_all_converted,
@@ -142,10 +144,11 @@ ggplot2::ggplot(RT_common, aes(x = RT, color = Software)) +
   geom_density() +
   scale_x_continuous(limits = c(0,115))
 ```
+<img src="figures/EXAMPLE-RT-distribution-pic3.png" width="80%" />
 
 ## Unique entries
 
-```{r inter-software unique}
+```{r inter-software unique, eval=FALSE}
 #Spectronaut unique entries
 spectronaut_unique_traceR <- dplyr::anti_join(
   spectronaut_all_converted,
@@ -165,3 +168,4 @@ ggplot2::ggplot(RT_unique, aes(x = RT, color = Software)) +
   geom_density() +
   scale_x_continuous(limits = c(0,115))
 ```
+<img src="figures/EXAMPLE-RT-distribution-pic4.png" width="80%" />

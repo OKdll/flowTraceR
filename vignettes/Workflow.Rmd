@@ -134,9 +134,10 @@ pd_peptides_plot_unknown_mods <- analyze_unknown_mods(input_df = pd_peptides_con
 kableExtra::kable(pd_precursor_report_unknown_mods)
 ```
 <p>&nbsp;</p>
-```{r}
+```{r eval=FALSE}
 pd_precursor_plot_unknown_mods
 ```
+<img src="figures/WORKFLOW-pic1.png" width="80%" />
 <p>&nbsp;</p>
 # Tracing inter-software differences
 
@@ -216,9 +217,10 @@ Spectronaut_report_proteinGroups <- analyze_connected_levels(input_df = Spectron
 kableExtra::kable(DIANN_report_proteinGroups)
 ```
 <p>&nbsp;</p>
-```{r}
+```{r eval=FALSE}
 DIANN_plot_proteinGroups_upper
 ```
+<img src="figures/WORKFLOW-pic2.png" width="80%" />
 <p>&nbsp;</p>
 
 ## Get software difference for proteinGroup denotations

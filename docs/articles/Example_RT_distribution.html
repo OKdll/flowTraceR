@@ -151,7 +151,7 @@
 <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">diann_all</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">RT</span>, color <span class="op">=</span> <span class="va">characteristic</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html" class="external-link">geom_density</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">115</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<p><img src="Example_RT_distribution_files/figure-html/RT%20without%20flowTraceR-1.png" width="700"></p>
+<p><img src="figures/EXAMPLE-RT-distribution-pic1.png" width="80%"></p>
 </div>
 <div class="section level3">
 <h3 id="with-flowtracer">With flowTraceR<a class="anchor" aria-label="anchor" href="#with-flowtracer"></a>
@@ -181,7 +181,7 @@
 <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">diann_traceR</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">RT</span>, color <span class="op">=</span> <span class="va">characteristic</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html" class="external-link">geom_density</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">115</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<p><img src="Example_RT_distribution_files/figure-html/RT%20with%20flowTraceR-1.png" width="700"></p>
+<p><img src="figures/EXAMPLE-RT-distribution-pic2.png" width="80%"></p>
 </div>
 </div>
 <div class="section level2">
@@ -209,7 +209,7 @@
 <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">RT_common</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">RT</span>, color <span class="op">=</span> <span class="va">Software</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html" class="external-link">geom_density</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">115</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<p><img src="Example_RT_distribution_files/figure-html/inter-software%20common-1.png" width="700"></p>
+<p><img src="figures/EXAMPLE-RT-distribution-pic3.png" width="80%"></p>
 </div>
 <div class="section level3">
 <h3 id="unique-entries">Unique entries<a class="anchor" aria-label="anchor" href="#unique-entries"></a>
@@ -233,7 +233,7 @@
 <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">RT_unique</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">RT</span>, color <span class="op">=</span> <span class="va">Software</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html" class="external-link">geom_density</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">115</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<p><img src="Example_RT_distribution_files/figure-html/inter-software%20unique-1.png" width="700"></p>
+<p><img src="figures/EXAMPLE-RT-distribution-pic4.png" width="80%"></p>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
