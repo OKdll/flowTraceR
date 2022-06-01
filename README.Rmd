@@ -88,7 +88,7 @@ Difference_proteinGroup <- trace_unique_common_pg(input_df1 = DIANN_connected_pr
 
 The table shows differences of proteingroup denotations for common precursor (`traceR_precursor`) for DIA-NN (`traceR_proteinGroups_DIA-NN`) and Spectronaut (`traceR_proteinGroups_Spectronaut`).
 ```{r}
-kableExtra::kable(Difference_proteinGroup[[1]], format = "pipe", caption = "Difference in proteinGroup denotation")
+kableExtra::kable(Difference_proteinGroup, format = "pipe", caption = "Difference in proteinGroup denotation")
 ```
 
 

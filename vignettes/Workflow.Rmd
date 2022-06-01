@@ -237,13 +237,13 @@ Difference_proteinGroup_reduced <- trace_unique_common_pg(input_df1 = DIANN_conn
 First, string_analysis = FALSE is used. ProteinGroups, which share similar proteins, stay in the output. For example, for the common precursor *COMMON2* has in Spectronaut a proteinGroup denotation of *EXAMPLE2* and in DIA-NN of *EXAMPLE1;EXAMPLE2*. 
 <p>&nbsp;</p>
 ```{r echo=FALSE}
-kableExtra::kable(Difference_proteinGroup[["Spectronaut"]], format = "pipe", caption = "Difference in proteinGroup denotation - string_analysis = FALSE")
+kableExtra::kable(Difference_proteinGroup, format = "pipe", caption = "Difference in proteinGroup denotation - string_analysis = FALSE")
 ```
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 Second, string_analysis = TRUE is applied. ProteiGroups, which have similar proteins, are filtered.
 <p>&nbsp;</p>
 ```{r echo=FALSE}
-kableExtra::kable(Difference_proteinGroup_reduced[["Spectronaut"]], format = "pipe", caption = "Difference in proteinGroup denotation - string_analysis = TRUE")
+kableExtra::kable(Difference_proteinGroup_reduced, format = "pipe", caption = "Difference in proteinGroup denotation - string_analysis = TRUE")
 ```
 

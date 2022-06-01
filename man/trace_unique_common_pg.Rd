@@ -17,16 +17,15 @@ trace_unique_common_pg(
 
 \item{input_df2}{A tibble which is the counter part for input_df1 - which was used to generate the unique_common categorization for the proteinGroup_precursor connection.}
 
-\item{analysis_name1}{output tibble name for input_df1 - default is \code{"input_df1"}.}
+\item{analysis_name1}{String. Appended to input_df1's traceR_proteinGroups column - default is \code{"input_df1"}.}
 
-\item{analysis_name2}{output tibble name for input_df2 - default is \code{"input_df2"}.}
+\item{analysis_name2}{String. Appended to input_df1's traceR_proteinGroups column - default is \code{"input_df2"}.}
 
 \item{string_analysis}{Logical value, default is \code{FALSE}. If TRUE, only keeps proteinGroup identifications of input_df1 in which protein denotations are not present in the counterpart - the proteinGroups of input_df2 - and vice versa.}
 }
 \value{
-This function returns a list with two \code{tibbles} - input_df1 and input_df2 - and with the following columns :
+This function returns a \code{tibble} with the following columns :
 \itemize{
-\item traceR_connected_pg_prec - categorization of the connection between proteinGroup and precursor - unique_common
 \item traceR_proteinGroups_input_df1 - proteinGroup denotations of input_df1 for common precursor between input_df1 and input_df2
 \item traceR_precursor - common precursor between input_df1 and input_df2
 \item traceR_proteinGroups_input_df2 - proteinGroup denotations of input_df2 for common precursor between input_df1 and input_df2

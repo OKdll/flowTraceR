@@ -96,13 +96,13 @@ precursor (`traceR_precursor`) for DIA-NN
 (`traceR_proteinGroups_Spectronaut`).
 
 ``` r
-kableExtra::kable(Difference_proteinGroup[[1]], format = "pipe", caption = "Difference in proteinGroup denotation")
+kableExtra::kable(Difference_proteinGroup, format = "pipe", caption = "Difference in proteinGroup denotation")
 ```
 
-| traceR\_connected\_pg\_prec | traceR\_proteinGroups\_DIA-NN | traceR\_precursor      | traceR\_proteinGroups\_Spectronaut |
-|:----------------------------|:------------------------------|:-----------------------|:-----------------------------------|
-| unique\_common              | P01764                        | AEDTAVYYC(UniMod:4)AK2 | A0A0J9YY99                         |
-| unique\_common              | Q92496                        | EGIVEYPR2              | Q02985                             |
+| traceR\_proteinGroups\_DIA-NN | traceR\_precursor      | traceR\_proteinGroups\_Spectronaut |
+|:------------------------------|:-----------------------|:-----------------------------------|
+| P01764                        | AEDTAVYYC(UniMod:4)AK2 | A0A0J9YY99                         |
+| Q92496                        | EGIVEYPR2              | Q02985                             |
 
 Difference in proteinGroup denotation
 

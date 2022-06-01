@@ -15,7 +15,7 @@
 #' @import dplyr
 #' @import stringr
 #'
-#' @return This function returns a \code{tibbles} with the following columns :
+#' @return This function returns a \code{tibble} with the following columns :
 #' \itemize{
 #'  \item traceR_proteinGroups_input_df1 - proteinGroup denotations of input_df1 for common precursor between input_df1 and input_df2
 #'  \item traceR_precursor - common precursor between input_df1 and input_df2
