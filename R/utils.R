@@ -31,18 +31,18 @@ analyze_string_pg <- function(input_df) {
 index_df <- vector(mode = "logical")
 
 #count nr of proteins per proteingroup #after sort_string_pg all with ";" separated
-count_vec <- stringr::str_count(input_df[, 2, drop = TRUE], pattern = ";") + 1 #entries #second column - pg entries of input_df1
+count_vec <- stringr::str_count(input_df[, 1, drop = TRUE], pattern = ";") + 1 #entries #first column - pg entries of input_df1
 
-#check if proteins per proteingroup -input_df column 2 - are present in proteingroup of input_df column 4 (counterpart of binary comparison)
+#check if proteins per proteingroup -input_df column 1 - are present in proteingroup of input_df column 3 (counterpart of binary comparison)
 for (i in seq_len(length(count_vec))) {
 
- string <- unlist(stringr::str_split(string = input_df[i, 2, drop = TRUE], pattern = ";"))
+ string <- unlist(stringr::str_split(string = input_df[i, 1, drop = TRUE], pattern = ";"))
 
  #number of proteins per proteingroup
  count <- length(string)
 
    for (x in 1:count_vec[i]) {
-      if (stringr::str_detect(string = input_df[i, 4, drop = TRUE], pattern = string[x]) == TRUE) { #4th column - pg entries of input_df2 - appended to input_df1
+      if (stringr::str_detect(string = input_df[i, 3, drop = TRUE], pattern = string[x]) == TRUE) { #4th column - pg entries of input_df2 - appended to input_df1
         #if protein is in other proteingroup - reduce count by 1
         count <- count - 1
       }

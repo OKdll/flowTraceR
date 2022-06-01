@@ -53,9 +53,8 @@ test_that("sort_string_pg is succesful", {
 test_that("analyze_string_pg is succesful", {
 
   data <- tibble::tibble(
-    "Precursor_input_df1" = c("A1", "B2", "C2"),
     "ProteinGroups_input_df1" = c("A03235;P0234", "B0234s", "Q65089"),
-    "Precursor_input_df2" = c("A1", "B2", "C2"),
+    "traceR_precursor" = c("A1", "B2", "C2"),
     "ProteinGroups_input_df2" = c("P0234", "A0505YV", "Q65089")
   )
 

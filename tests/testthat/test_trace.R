@@ -148,14 +148,14 @@ test_that("trace_unique_common_pg is succesful", {
   output_filtered <- trace_unique_common_pg(input_df1 = data1, input_df2 = data2, analysis_name1 = "data1", analysis_name2 = "data2", string_analysis = TRUE)
 
   expect_error(trace_unique_common_pg(input_df1 = data1[, 2:3], input_df2 = data2, analysis_name1 = "data1", analysis_name2 = "data2", string_analysis = FALSE), "For connected_levels proteinGroup_precursor: traceR_connected_pg_prec column must be present in submitted data.")
-  expect_type(output, "list")
-  expect_equal(nrow(output[[1]]), 2)
-  expect_equal(ncol(output[[1]]), 4)
-  expect_equal(output[[1]]$traceR_proteinGroups_data2 , c("Q02985", "A0A0A0MRZ8;P04433"))
+  expect_s3_class(output, "tbl")
+  expect_equal(nrow(output), 2)
+  expect_equal(ncol(output), 3)
+  expect_equal(output$traceR_proteinGroups_data2 , c("Q02985", "A0A0A0MRZ8;P04433"))
 
   expect_type(output_filtered, "list")
-  expect_equal(nrow(output_filtered[[1]]), 1)
-  expect_equal(ncol(output_filtered[[1]]), 4)
-  expect_equal(output_filtered[[1]]$traceR_proteinGroups_data2 , c("Q02985"))
+  expect_equal(nrow(output_filtered), 1)
+  expect_equal(ncol(output_filtered), 3)
+  expect_equal(output_filtered$traceR_proteinGroups_data2 , c("Q02985"))
 
 })
