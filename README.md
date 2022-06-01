@@ -149,4 +149,4 @@ ggplot2::ggplot(RT_common, aes(x = RT, color = Software)) +
   geom_density()
 ```
 
-<img src="man/figures/README-example RT-1.png" width="100%" />
+<img src="man/figures/README-example-RT-1.png" width="100%" />
