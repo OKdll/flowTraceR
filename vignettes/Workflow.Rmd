@@ -221,7 +221,6 @@ DIANN_plot_proteinGroups_upper
 ```
 <p>&nbsp;</p>
 
-
 ## Get software difference for proteinGroup denotations
 Filter for potential common precursor and unique proteinGroup connections. It is possible to trace differences in proteinGroup denotations for common precursor.
 
