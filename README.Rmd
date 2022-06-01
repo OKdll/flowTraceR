@@ -96,7 +96,7 @@ kableExtra::kable(Difference_proteinGroup[[1]], format = "pipe", caption = "Diff
 
 This is a basic example which shows the power of flowTraceR´s conversion to a standardized level (precursor, modified peptides, proteinGroup) output by highlighting an inter-software comparison of retention times. Please check the vignette [Example_RT_distribution](https://okdll.github.io/flowTraceR/articles/Example_RT_distribution.html) for a detailed view of the analysis **with flowTraceR** and **without flowTraceR**.
 
-```{r example RT}
+```{r example RT, eval=FALSE}
 #DIA-NN
 diann <- get_example("RetentionTime")[["DIA-NN"]]
 #Spectronaut
@@ -128,4 +128,4 @@ RT_common <- dplyr::bind_rows(
 ggplot2::ggplot(RT_common, aes(x = RT, color = Software)) + 
   geom_density()
 ```
-
+<img src="man/figures/README-example-RT-1.png" width="100%" />
