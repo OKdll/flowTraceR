@@ -1,5 +1,5 @@
 Package: flowTraceR
-Title: Standardization of level information and tracking inter-software differences in bottom-up label-free proteomics
+Title: Tracing Information Flow for Inter-Software Comparisons in Mass Spectrometry-Based Bottom-Up Proteomics
 Version: 0.1.0
 Authors@R: 
     person("Oliver", "Kardell", , "Okdll@gmx.net", role = c("aut", "cre"))
