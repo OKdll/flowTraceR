@@ -19,7 +19,7 @@ First submission.
 0 errors ✓ | 0 warnings ✓ | 1 note
 
 ## Note
-windows-x86_64-w64-mingw32 (win-builder), Possibly misspelled words in DESCRIPTION.
+windows-x86_64-w64-mingw32 (win-builder): Possibly misspelled words in DESCRIPTION.
 
-Maintainer's comment: checked. words are not misspelled.
+Description was checked. Words are not misspelled.
 
