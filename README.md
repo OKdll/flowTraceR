@@ -4,6 +4,10 @@
 # flowTraceR <img src='man/figures/flowTraceR.png' align="right" width="10%" />
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/OKdll/flowTraceR/workflows/R-CMD-check/badge.svg)](https://github.com/OKdll/flowTraceR/actions)
+[![Build
+Status](https://app.travis-ci.com/OKdll/flowTraceR.svg?branch=main)](https://app.travis-ci.com/OKdll/flowTraceR)
 <!-- badges: end -->
 
 flowTraceR is an R package for enabling researchers to perform
