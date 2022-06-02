@@ -52,7 +52,6 @@ jobs:
         with:
         extra-packages: any::rcmdcheck, MASS=?ignore-before-r=4.3
         needs: check
-
-    - uses: r-lib/actions/check-r-package@v2
-  env:
+      - uses: r-lib/actions/check-r-package@v2
+    env:
     _R_CHECK_FORCE_SUGGESTS_: false
