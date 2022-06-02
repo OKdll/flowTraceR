@@ -4,7 +4,7 @@
 #'
 #' Shows the absolute and relative counts of TRUE/FALSE of the traceR_precursor_unknownMods or traceR_mod.peptides_unknownMods column - as data frame or plot. Duplicate traceR_mod.peptides entries or traceR_precursor entries are removed, respectively.
 #'
-#' @param input_df A tibble with the traceR_precursor_unknownMods or tracR_mod.peptides_unknownMods column.
+#' @param input_df A tibble with the traceR_precursor_unknownMods or traceR_mod.peptides_unknownMods column.
 #' @param level Choose either \code{precursor} for traceR_precursor_unknownMods or \code{modified_peptides} for traceR_mod.peptides_unknownMods. Default is precursor.
 #' @param plot Logical value, default is TRUE. If \code{TRUE} barplot is generated, if \code{FALSE} report as output.
 #' @param plot_characteristic If \code{absolute} the absolute count is displayed in barplot, if \code{relative} the relative count is displayed in barplot. Default is absolute. \code{plot_characteristic} has no influence on report.

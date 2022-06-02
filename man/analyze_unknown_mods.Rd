@@ -12,7 +12,7 @@ analyze_unknown_mods(
 )
 }
 \arguments{
-\item{input_df}{A tibble with the traceR_precursor_unknownMods or tracR_mod.peptides_unknownMods column.}
+\item{input_df}{A tibble with the traceR_precursor_unknownMods or traceR_mod.peptides_unknownMods column.}
 
 \item{level}{Choose either \code{precursor} for traceR_precursor_unknownMods or \code{modified_peptides} for traceR_mod.peptides_unknownMods. Default is precursor.}
 
