@@ -12,6 +12,7 @@
 #' @import dplyr
 #' @import stringr
 #' @import tidyr
+#' @importFrom magrittr %>%
 #'
 #' @return This function returns the original submitted \code{tibble} - input_df - including two new columns:
 #' \itemize{
