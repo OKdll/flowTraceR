@@ -138,7 +138,7 @@
 <div class="section level2">
 <h2 id="conversion-to-standardized-format">Conversion to standardized format<a class="anchor" aria-label="anchor" href="#conversion-to-standardized-format"></a>
 </h2>
-<p>The input data can be converted to a standardized output format on precursor, modified peptide and proteingroup level. The generated columns with <strong>flowTraceR</strong> are appendend to the submitted data without any filtering performed. The generated columns are denoted with the prefix <em>traceR</em>. Note that only the modifcations <em>UniMod:35 (Oxidation)</em> and <em>UniMod:4 (Carbamidomethyl)</em> are supported by <strong>flowTraceR</strong>. A column with the appendix <em>unknownMods</em> is generated to potentially filter modifications which are not supported: if TRUE, an unknown modification is detected.</p>
+<p>The input data can be converted to a standardized output format on precursor, modified peptide and proteingroup level. The generated columns with <strong>flowTraceR</strong> are appendend to the submitted data without any filtering performed. The generated columns are denoted with the prefix <em>traceR</em>. Note that only the modifications <em>UniMod:35 (Oxidation)</em> and <em>UniMod:4 (Carbamidomethyl)</em> are supported by <strong>flowTraceR</strong>. A column with the appendix <em>unknownMods</em> is generated to potentially filter modifications which are not supported: if TRUE, an unknown modification is detected.</p>
 <div class="section level3">
 <h3 id="precursor">Precursor<a class="anchor" aria-label="anchor" href="#precursor"></a>
 </h3>
@@ -182,7 +182,7 @@
 <div class="section level3">
 <h3 id="analyzing-conversion">Analyzing Conversion<a class="anchor" aria-label="anchor" href="#analyzing-conversion"></a>
 </h3>
-<p>Since only the modifcations UniMod:35 (Oxidation) and UniMod:4 (Carbamidomethyl) are currently supported, <strong>flowTraceR</strong> provides functions to analyze the conversion and shows how much unknown modifications are present in the dataset with <code><a href="../reference/analyze_unknown_mods.html">analyze_unknown_mods()</a></code>.</p>
+<p>Since only the modifications UniMod:35 (Oxidation) and UniMod:4 (Carbamidomethyl) are currently supported, <strong>flowTraceR</strong> provides functions to analyze the conversion and shows how much unknown modifications are present in the dataset with <code><a href="../reference/analyze_unknown_mods.html">analyze_unknown_mods()</a></code>.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co">#For one software example - equivalent for others.</span>
 
