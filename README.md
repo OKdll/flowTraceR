@@ -6,8 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/OKdll/flowTraceR/workflows/R-CMD-check/badge.svg)](https://github.com/OKdll/flowTraceR/actions)
-[![Build
-Status](https://app.travis-ci.com/OKdll/flowTraceR.svg?branch=main)](https://app.travis-ci.com/OKdll/flowTraceR)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/flowTraceR)](https://CRAN.R-project.org/package=flowTraceR)
 <!-- badges: end -->
 
 flowTraceR is an R package for enabling researchers to perform
