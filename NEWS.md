@@ -1,4 +1,4 @@
-# mpwR 0.1.1
+# flowTraceR 0.1.1
 
 * Fixing typos.
 * Minor changes in vignettes. 
