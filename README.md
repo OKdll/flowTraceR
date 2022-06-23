@@ -13,7 +13,7 @@ status](https://www.r-pkg.org/badges/version/flowTraceR)](https://CRAN.R-project
 flowTraceR is an R package for enabling researchers to perform
 inter-software comparisons for common proteomic software tools. It can
 be used to analyze label-free mass spectrometry-based experiments with
-data-depended or data-independent spectral acquisition.
+data-dependent or data-independent spectral acquisition.
 
 ## Installation
 

@@ -65,7 +65,7 @@ pd_psm <- flowTraceR::get_example("PD")
 
 # Conversion to standardized format
 
-The input data can be converted to a standardized output format on precursor, modified peptide and proteingroup level. The generated columns with **flowTraceR** are appendend to the submitted data without any filtering performed. The generated columns are denoted with the prefix *traceR*. Note that only the modifications *UniMod:35 (Oxidation)* and *UniMod:4 (Carbamidomethyl)* are supported by **flowTraceR**. A column with the appendix *unknownMods* is generated to potentially filter modifications which are not supported: if TRUE, an unknown modification is detected.
+The input data can be converted to a standardized output format on precursor, modified peptide and proteingroup level. The generated columns with **flowTraceR** are appended to the submitted data without any filtering performed. The generated columns are denoted with the prefix *traceR*. Note that only the modifications *UniMod:35 (Oxidation)* and *UniMod:4 (Carbamidomethyl)* are supported by **flowTraceR**. A column with the appendix *unknownMods* is generated to potentially filter modifications which are not supported: if TRUE, an unknown modification is detected.
 
 ## Precursor 
 

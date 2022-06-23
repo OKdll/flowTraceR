@@ -46,7 +46,7 @@
 convert_precursor <- function(input_df,
                               software = c("MaxQuant", "PD", "DIA-NN", "Spectronaut")) {
 
-  . = NULL #handling gloabal vars
+  . = NULL #handling global vars
 
   #generate tibble with default modifications
   modifications <- tibble::tibble(
