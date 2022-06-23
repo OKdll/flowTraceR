@@ -16,10 +16,5 @@ First submission.
 
 ## R CMD check results
 
-0 errors ✓ | 0 warnings ✓ | 1 note
-
-## Note
-windows-x86_64-w64-mingw32 (win-builder): Possibly misspelled words in DESCRIPTION.
-
-Description was checked. Words are not misspelled.
+0 errors ✓ | 0 warnings ✓ | 0 note
 
