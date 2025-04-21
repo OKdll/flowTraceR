@@ -1,18 +1,10 @@
 ## Submission 
 
-First submission.
+New submission. 
 
 ## Test environments
 
-* macOS-latest (on GitHub actions), R 4.2.0
-* windows-latest (on GitHub actions), R 4.2.0
-* ubuntu-latest (on GitHub actions), r-devel
-* ubuntu-latest (on GitHub actions), R 4.2.0
-* ubuntu-latest (on GitHub actions), R 4.1.3
-* windows-x86_64-w64-mingw32 (win-builder), r-devel
-* fedora-clang-devel (R-hub), r-devel
-* windows-x86_64-devel (R-hub), r-devel
-* ubuntu-gcc-devel (R-hub), r-devel
+* Fixed error for all test environments - `unlist(., .data, use.names = FALSE)`: 'recursive' must be a length-1 vector.
 
 ## R CMD check results
 
