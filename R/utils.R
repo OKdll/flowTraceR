@@ -6,7 +6,7 @@ sort_string_pg <- function(input_df,
 
   input_string <- input_df %>%
     dplyr::select(!!as.symbol(sort_column)) %>%
-    unlist(., recursive = TRUE, use.names = FALSE)
+    unlist(x = ., recursive = TRUE, use.names = FALSE)
 
 #remove spaces
 adjusted_string <- stringr::str_remove_all(string = input_string, pattern = " ")
@@ -63,4 +63,4 @@ for (i in seq_len(length(count_vec))) {
 }
 
 #Define used global varaibles
-utils::globalVariables(c(":="))
+utils::globalVariables(c(":=", "."))
