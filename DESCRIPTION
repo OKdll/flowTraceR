@@ -1,6 +1,6 @@
 Package: flowTraceR
 Title: Tracing Information Flow for Inter-Software Comparisons in Mass Spectrometry-Based Bottom-Up Proteomics
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Oliver", "Kardell", , "Okdll@gmx.net", role = c("aut", "cre"))
 Description: Useful functions to standardize software outputs from ProteomeDiscoverer, Spectronaut, DIA-NN and MaxQuant on precursor, modified peptide and proteingroup level and to trace software differences for identifications such as varying proteingroup denotations for common precursor.
@@ -27,4 +27,4 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 URL: https://github.com/OKdll/flowTraceR
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.1
